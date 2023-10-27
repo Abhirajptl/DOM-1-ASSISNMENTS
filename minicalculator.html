@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{
+            display :flex;
+        }
+        #def{
+            display :flex;
+            justify-content:flex-start;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div id="abc">
+        <input type="number" id="one" placeholder="enter 1st number">
+        <input type="number" id="two" placeholder="enter 2nd number">
+    </div>
+    <br>
+    <br>
+    <div id="def">
+        <button onclick="clicked1()">Add</button>
+        <button onclick="clicked2()">Subtract</button>
+        <button onclick="clicked3()">Multiply</button>
+        <button onclick="clicked4()">Divide</button>
+    </div>
+</body>
+</html>
+<script>
+    let heading1 = document.getElementById("one");
+    let heading2 = document.getElementById("two");
+    function clicked1(){
+    
+        alert((+heading1.value) + (+heading2.value));
+    }
+    function clicked2(){
+    
+        alert((+heading1.value) - (+heading2.value));
+    }
+    function clicked3(){
+    
+        alert((+heading1.value) * (+heading2.value));
+    }
+    function clicked4(){
+    
+        alert((+heading1.value) / (+heading2.value));
+    }
+</script>
